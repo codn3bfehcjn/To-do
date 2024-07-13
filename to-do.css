@@ -1,0 +1,101 @@
+*{
+    box-sizing: border-box;
+}
+body {
+    font-family: "Poetsen One", sans-serif;
+    background-image: linear-gradient(to right, rgb(71, 185, 197),rgb(194, 194, 106));
+    overflow: hidden;
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+h2 {
+    text-decoration: underline 5px;
+}
+
+.main {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-top: 70px;
+    font-weight: bolder;
+    font-size: large;
+    border: 1vw ridge rgb(45, 124, 99);
+  
+    box-sizing: border-box;
+}
+
+.input {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+}
+
+.inp {
+    text-align: center;
+    width: 80%;
+    height: 5vh;
+    border-radius: 20px;
+    transition: 0.3s all ease;
+    padding: 10px;
+    font-size: 20px;
+}
+
+.inp:focus {
+    box-shadow: 5px 5px 9px;
+    outline: none;
+}
+
+button {
+    background-color: rgb(2, 2, 54);
+    color: white;
+    border: 2px solid wheat;
+    border-radius: 10px;
+    width: 80px;
+    margin-top: 20px;
+}
+
+button:hover {
+    background-color: chartreuse;
+    color: black;
+}
+
+.list {
+    background-color: gainsboro;
+    border-radius: 20px;
+    text-align: center;
+    width: 80%;
+    margin-top: 20px;
+    /* padding-left: 20px; */
+}
+
+.list li {
+    list-style-type: none;
+    margin: 10px 0;
+}
+
+.list div {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+@media (max-width: 600px) {
+    .main {
+        width: 100%;
+        margin-top: 20px;
+    }
+
+    .inp {
+        width: 100%;
+    }
+
+    button {
+        width: 100%;
+    }
+
+    .list {
+        width: 100%;
+    }
+}
